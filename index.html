@@ -95,13 +95,13 @@
 
       <nav class="nav-links" aria-label="Primary">
         <a href="#platform">Product</a>
+        <a href="#features">Features</a>  
         <a href="#why">Solutions</a>
-        <a href="#features">Features</a>
         <a href="#faq">Resources</a>
       </nav>
 
       <div class="header-actions">
-        <a class="btn btn--ghost btn--sm" href="#get-started">Login</a>
+        <!-- <a class="btn btn--ghost btn--sm" href="#get-started">Login</a> -->
         <a class="btn btn--primary btn--sm" href="#get-started">Get Started</a>
       </div>
 
@@ -888,43 +888,192 @@
     <!-- ============================ WHY TARIK ============================ -->
     <section class="section section--why" id="why">
       <div class="container">
-        <div class="section-head" data-reveal>
+        <div class="why-intro" data-reveal>
           <p class="section-kicker">Why Tarik</p>
-          <h2>Built around the way legal teams actually work.</h2>
+          <h2>Built around the way<br>legal teams <em>actually</em> work.</h2>
+          <p class="section-sub">Tarik brings everything your firm needs into one place — so you can focus on what matters most.</p>
         </div>
 
-        <div class="why-grid">
-          <article class="why-item" data-reveal>
-            <div class="why-kicker">
-              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>
-              Everything connected
+        <div class="why-features">
+          <!-- Feature 01: Everything Connected -->
+          <article class="why-row" data-reveal>
+            <div class="why-visual">
+              <div class="why-ui-card why-ui-matters">
+                <div class="ui-sidebar">
+                  <div class="ui-nav-item ui-nav-active">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 10h8M8 14h5"/></svg>
+                    <span>Matters</span>
+                  </div>
+                  <div class="ui-nav-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h10M7 12h7"/></svg>
+                    <span>Cases</span>
+                  </div>
+                  <div class="ui-nav-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M6 20v-2a6 6 0 0 1 12 0v2"/></svg>
+                    <span>Contacts</span>
+                  </div>
+                </div>
+                <div class="ui-content">
+                  <div class="ui-content-header">
+                    <span class="ui-title">Matters</span>
+                    <span class="ui-btn-primary">+ New matter</span>
+                  </div>
+                  <div class="ui-table">
+                    <div class="ui-table-row">
+                      <span class="ui-matter-id">M-1042</span>
+                      <span class="ui-matter-name">Estate of R. Alvarez</span>
+                      <span class="ui-status ui-status-active">Active</span>
+                    </div>
+                    <div class="ui-table-row">
+                      <span class="ui-matter-id">M-1008</span>
+                      <span class="ui-matter-name">Acme Corp. v. Smith</span>
+                      <span class="ui-status ui-status-pending">Pending</span>
+                    </div>
+                    <div class="ui-table-row">
+                      <span class="ui-matter-id">M-0956</span>
+                      <span class="ui-matter-name">Johnson Property Dispute</span>
+                      <span class="ui-status ui-status-active">Active</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="why-visual-accent">
+                <svg viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="1.8"><circle cx="6" cy="6" r="2"/><circle cx="18" cy="6" r="2"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="18" r="2"/><path d="M8 6h8M6 8v8M18 8v8M8 18h8" stroke-dasharray="2 2"/></svg>
+              </div>
             </div>
-            <h3>Your matters, clients, court events, documents and financial information stay connected.</h3>
-            <p>Open any matter and see everything that belongs to it — no jumping between systems, no missing context.</p>
+            <div class="why-copy">
+              <div class="why-label"><span class="why-num">01</span> EVERYTHING CONNECTED</div>
+              <h3>Your matters, clients, court events, documents and financial information stay connected.</h3>
+              <p>Open any matter and see everything that belongs to it — no jumping between systems, no missing context.</p>
+            </div>
           </article>
-          <article class="why-item" data-reveal>
-            <div class="why-kicker">
-              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>
-              Less administrative work
+
+          <!-- Feature 02: Less Administrative Work -->
+          <article class="why-row" data-reveal>
+            <div class="why-visual">
+              <div class="why-ui-card why-ui-tasks">
+                <div class="ui-content-header">
+                  <span class="ui-title">Tasks</span>
+                </div>
+                <div class="ui-task-list">
+                  <div class="ui-task-item">
+                    <span class="ui-task-check ui-task-done"></span>
+                    <span class="ui-task-text">File motion for hearing</span>
+                  </div>
+                  <div class="ui-task-item">
+                    <span class="ui-task-check ui-task-done"></span>
+                    <span class="ui-task-text">Review client intake form</span>
+                  </div>
+                  <div class="ui-task-item">
+                    <span class="ui-task-check"></span>
+                    <span class="ui-task-text">Prepare witness list</span>
+                  </div>
+                  <div class="ui-task-item">
+                    <span class="ui-task-check"></span>
+                    <span class="ui-task-text">Schedule depositions</span>
+                  </div>
+                </div>
+                <div class="ui-analytics">
+                  <div class="ui-analytics-label">Time saved this week</div>
+                  <div class="ui-analytics-value">10.4 hrs</div>
+                  <div class="ui-sparkline">
+                    <svg viewBox="0 0 80 24" fill="none" stroke="var(--primary)" stroke-width="1.5"><polyline points="0,18 12,14 24,16 36,10 48,12 60,6 72,8 80,4"/></svg>
+                  </div>
+                </div>
+              </div>
             </div>
-            <h3>Reduce repetitive manual processes and spend more time on legal work.</h3>
-            <p>Fewer spreadsheets, fewer double entries and fewer status updates to chase across the firm.</p>
+            <div class="why-copy">
+              <div class="why-label"><span class="why-num">02</span> LESS ADMINISTRATIVE WORK</div>
+              <h3>Reduce repetitive manual processes and spend more time on legal work.</h3>
+              <p>Fewer spreadsheets, fewer double entries and fewer status updates to chase across the firm.</p>
+            </div>
           </article>
-          <article class="why-item" data-reveal>
-            <div class="why-kicker">
-              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>
-              Clear visibility
+
+          <!-- Feature 03: Clear Visibility -->
+          <article class="why-row" data-reveal>
+            <div class="why-visual">
+              <div class="why-ui-card why-ui-dashboard">
+                <div class="ui-dash-grid">
+                  <div class="ui-dash-card">
+                    <div class="ui-dash-label">Hearings this week</div>
+                    <div class="ui-dash-value">12</div>
+                  </div>
+                  <div class="ui-dash-card ui-dash-alert">
+                    <div class="ui-dash-label">Overdue tasks</div>
+                    <div class="ui-dash-value">7</div>
+                  </div>
+                </div>
+                <div class="ui-event-list">
+                  <div class="ui-event-item">
+                    <div class="ui-event-dot"></div>
+                    <div class="ui-event-info">
+                      <span class="ui-event-title">Hearing – Court of Appeal</span>
+                      <span class="ui-event-meta">Today, 10:00 AM</span>
+                    </div>
+                  </div>
+                  <div class="ui-event-item">
+                    <div class="ui-event-dot ui-event-dot-pending"></div>
+                    <div class="ui-event-info">
+                      <span class="ui-event-title">File response to interrogatories</span>
+                      <span class="ui-event-meta">Tomorrow, 12:00 PM</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="why-visual-accent why-visual-accent-right">
+                <svg viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="1.8"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 3"/></svg>
+              </div>
             </div>
-            <h3>Know what is happening across your firm's matters without searching through multiple systems.</h3>
-            <p>Dashboards, calendars and reports surface what needs attention — across every matter and team member.</p>
+            <div class="why-copy">
+              <div class="why-label"><span class="why-num">03</span> CLEAR VISIBILITY</div>
+              <h3>Know what is happening across your firm's matters without searching through multiple systems.</h3>
+              <p>Dashboards, calendars and reports surface what needs attention — across every matter and team member.</p>
+            </div>
           </article>
-          <article class="why-item" data-reveal>
-            <div class="why-kicker">
-              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>
-              Designed for legal workflows
+
+          <!-- Feature 04: Designed for Legal Workflows -->
+          <article class="why-row" data-reveal>
+            <div class="why-visual">
+              <div class="why-ui-card why-ui-workflow">
+                <div class="ui-content-header">
+                  <span class="ui-title">Matter workflow</span>
+                </div>
+                <div class="ui-workflow-steps">
+                  <div class="ui-workflow-step ui-workflow-complete">
+                    <div class="ui-workflow-dot"></div>
+                    <span>Intake</span>
+                  </div>
+                  <div class="ui-workflow-line ui-workflow-line-complete"></div>
+                  <div class="ui-workflow-step ui-workflow-complete">
+                    <div class="ui-workflow-dot"></div>
+                    <span>Pleadings</span>
+                  </div>
+                  <div class="ui-workflow-line ui-workflow-line-active"></div>
+                  <div class="ui-workflow-step ui-workflow-active">
+                    <div class="ui-workflow-dot"></div>
+                    <span>Hearing</span>
+                  </div>
+                  <div class="ui-workflow-line"></div>
+                  <div class="ui-workflow-step">
+                    <div class="ui-workflow-dot"></div>
+                    <span>Orders</span>
+                  </div>
+                  <div class="ui-workflow-line"></div>
+                  <div class="ui-workflow-step">
+                    <div class="ui-workflow-dot"></div>
+                    <span>Closure</span>
+                  </div>
+                </div>
+              </div>
+              <div class="why-visual-accent">
+                <svg viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="1.8"><rect x="4" y="7" width="16" height="12" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+              </div>
             </div>
-            <h3>Built around matters, court cases, hearings, parties and the day-to-day needs of legal teams.</h3>
-            <p>The structure reflects how legal work actually happens — not a generic business tool adapted for law.</p>
+            <div class="why-copy">
+              <div class="why-label"><span class="why-num">04</span> DESIGNED FOR LEGAL WORKFLOWS</div>
+              <h3>Built around matters, court cases, hearings, parties and the day-to-day needs of legal teams.</h3>
+              <p>The structure reflects how legal work actually happens — not a generic business tool adapted for law.</p>
+            </div>
           </article>
         </div>
       </div>

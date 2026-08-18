@@ -1689,51 +1689,108 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 }
 
 /* ------------------------------ Why section ------------------------------ */
-.section--why { background: var(--surface); border-bottom: 1px solid var(--border); }
+.section--why { background: var(--background); padding-top: clamp(100px, 12vw, 160px); padding-bottom: clamp(80px, 10vw, 140px); position: relative; overflow: hidden; }
 
-.why-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  border-top: 1px solid var(--border);
-}
+.why-intro { max-width: 720px; margin-inline: auto; text-align: center; margin-bottom: clamp(64px, 8vw, 96px); }
+.why-intro h2 { font-family: var(--font-display); font-weight: 500; font-size: clamp(2.2rem, 4.5vw, 3.2rem); line-height: 1.1; letter-spacing: -0.02em; color: var(--text); margin-top: 16px; }
+.why-intro h2 em { font-style: italic; color: var(--primary); }
+.why-intro .section-sub { max-width: 560px; margin-inline: auto; margin-top: 20px; }
 
-.why-item {
-  padding: clamp(30px, 4vw, 46px) clamp(16px, 3vw, 40px) clamp(36px, 4.5vw, 54px);
-  border-bottom: 1px solid var(--border);
-}
+/* Feature rows */
+.why-features { display: flex; flex-direction: column; }
+.why-row { display: grid; grid-template-columns: 44% 1fr; gap: clamp(32px, 5vw, 64px); align-items: center; padding: clamp(40px, 5vw, 60px) 0; border-bottom: 1px solid rgba(15, 30, 45, 0.08); }
+.why-row:first-child { padding-top: 0; }
+.why-row:last-child { border-bottom: none; }
+.why-row:nth-child(even) { grid-template-columns: 1fr 44%; }
+.why-row:nth-child(even) .why-visual { order: 2; }
+.why-row:nth-child(even) .why-copy { order: 1; }
 
-.why-item:nth-child(odd) { border-right: 1px solid var(--border); }
+.why-label { display: flex; align-items: center; gap: 10px; font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--primary); margin-bottom: 16px; }
+.why-num { font-family: var(--font-display); font-size: 14px; font-weight: 600; }
 
-.why-kicker {
-  display: flex;
-  align-items: center;
-  gap: 9px;
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--primary);
-  margin-bottom: 20px;
-}
+.why-copy h3 { font-family: var(--font-display); font-weight: 500; font-size: clamp(1.5rem, 2.2vw, 1.9rem); line-height: 1.2; letter-spacing: -0.01em; color: var(--text); max-width: 32ch; }
+.why-copy p { margin-top: 14px; font-size: 1rem; color: var(--text-muted); max-width: 44ch; }
 
-.why-kicker .icon { width: 18px; height: 18px; }
+/* Product UI cards */
+.why-visual { position: relative; }
+.why-visual-accent { position: absolute; top: -16px; left: -16px; width: 48px; height: 48px; background: var(--primary-tint); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; z-index: 1; }
+.why-visual-accent svg { width: 24px; height: 24px; }
+.why-visual-accent-right { left: auto; right: -16px; }
 
-.why-item h3 {
-  font-family: var(--font-display);
-  font-weight: 500;
-  font-size: clamp(1.35rem, 2vw, 1.7rem);
-  line-height: 1.25;
-  letter-spacing: -0.01em;
-  color: var(--text);
-  max-width: 26ch;
-}
+.why-ui-card { background: var(--surface); border-radius: var(--radius-lg); border: 1px solid var(--border); box-shadow: var(--shadow-2); overflow: hidden; transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease); }
+.why-ui-card:hover { transform: translateY(-3px); box-shadow: 0 16px 40px -16px rgba(5, 46, 30, 0.22); }
 
-.why-item p {
-  margin-top: 14px;
-  font-size: 1rem;
-  color: var(--text-muted);
-  max-width: 46ch;
-}
+/* UI sidebar */
+.ui-sidebar { width: 140px; background: var(--background); border-right: 1px solid var(--border); padding: 16px 12px; display: flex; flex-direction: column; gap: 4px; }
+.ui-nav-item { display: flex; align-items: center; gap: 8px; padding: 8px 10px; border-radius: var(--radius-sm); font-size: 13px; color: var(--text-muted); cursor: pointer; transition: background 0.2s, color 0.2s; }
+.ui-nav-item svg { width: 16px; height: 16px; flex-shrink: 0; }
+.ui-nav-active { background: var(--primary-tint); color: var(--primary); font-weight: 600; }
+
+/* UI content */
+.ui-content { padding: 16px; }
+.ui-content-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
+.ui-title { font-size: 14px; font-weight: 600; color: var(--text); }
+.ui-btn-primary { font-size: 12px; font-weight: 600; color: var(--surface); background: var(--primary); padding: 6px 12px; border-radius: var(--radius-sm); cursor: pointer; }
+
+/* UI table */
+.ui-table { display: flex; flex-direction: column; }
+.ui-table-row { display: grid; grid-template-columns: 70px 1fr auto; align-items: center; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--border); font-size: 13px; }
+.ui-table-row:last-child { border-bottom: none; }
+.ui-matter-id { color: var(--text-faint); font-family: var(--font-body); }
+.ui-matter-name { color: var(--text); font-weight: 500; }
+.ui-status { padding: 3px 8px; border-radius: 12px; font-size: 11px; font-weight: 600; }
+.ui-status-active { background: var(--success-soft); color: var(--success); }
+.ui-status-pending { background: var(--warning-soft); color: var(--warning); }
+
+/* Matters layout */
+.why-ui-matters { display: flex; }
+.why-ui-matters .ui-content { flex: 1; }
+
+/* Tasks UI */
+.why-ui-tasks { padding: 16px; }
+.why-ui-tasks .ui-content-header { margin-bottom: 12px; }
+.ui-task-list { display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px; }
+.ui-task-item { display: flex; align-items: center; gap: 10px; font-size: 13px; color: var(--text); }
+.ui-task-check { width: 16px; height: 16px; border: 1.5px solid var(--border-strong); border-radius: 4px; flex-shrink: 0; position: relative; }
+.ui-task-done { background: var(--primary); border-color: var(--primary); }
+.ui-task-done::after { content: ''; position: absolute; top: 2px; left: 4.5px; width: 4px; height: 7px; border: solid var(--surface); border-width: 0 1.5px 1.5px 0; transform: rotate(45deg); }
+
+/* Analytics card */
+.ui-analytics { background: var(--primary-tint); border-radius: var(--radius-sm); padding: 14px 16px; }
+.ui-analytics-label { font-size: 12px; color: var(--text-muted); margin-bottom: 4px; }
+.ui-analytics-value { font-size: 24px; font-weight: 700; color: var(--primary-dark); margin-bottom: 8px; }
+.ui-sparkline svg { width: 100%; height: 24px; }
+
+/* Dashboard UI */
+.why-ui-dashboard { padding: 16px; }
+.ui-dash-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 16px; }
+.ui-dash-card { background: var(--background); border-radius: var(--radius-sm); padding: 14px; border: 1px solid var(--border); }
+.ui-dash-card.ui-dash-alert { background: var(--danger-soft); border-color: transparent; }
+.ui-dash-label { font-size: 12px; color: var(--text-muted); margin-bottom: 4px; }
+.ui-dash-value { font-size: 28px; font-weight: 700; color: var(--text); }
+.ui-dash-alert .ui-dash-value { color: var(--danger); }
+
+.ui-event-list { display: flex; flex-direction: column; gap: 10px; }
+.ui-event-item { display: flex; align-items: flex-start; gap: 10px; }
+.ui-event-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--primary); margin-top: 5px; flex-shrink: 0; }
+.ui-event-dot-pending { background: var(--warning); }
+.ui-event-info { display: flex; flex-direction: column; }
+.ui-event-title { font-size: 13px; font-weight: 500; color: var(--text); }
+.ui-event-meta { font-size: 12px; color: var(--text-faint); }
+
+/* Workflow UI */
+.why-ui-workflow { padding: 16px; }
+.why-ui-workflow .ui-content-header { margin-bottom: 16px; }
+.ui-workflow-steps { display: flex; flex-direction: column; align-items: flex-start; padding-left: 4px; }
+.ui-workflow-step { display: flex; align-items: center; gap: 10px; font-size: 13px; color: var(--text-muted); }
+.ui-workflow-step.ui-workflow-active { color: var(--primary); font-weight: 600; }
+.ui-workflow-step.ui-workflow-complete { color: var(--text); }
+.ui-workflow-dot { width: 12px; height: 12px; border-radius: 50%; border: 2px solid var(--border-strong); background: var(--surface); flex-shrink: 0; }
+.ui-workflow-active .ui-workflow-dot { border-color: var(--primary); background: var(--primary); }
+.ui-workflow-complete .ui-workflow-dot { border-color: var(--primary); background: var(--primary); }
+.ui-workflow-line { width: 2px; height: 16px; background: var(--border); margin-left: 5px; }
+.ui-workflow-line-complete { background: var(--primary); }
+.ui-workflow-line-active { background: linear-gradient(to bottom, var(--primary), var(--border)); }
 
 /* ------------------------------ Security section ------------------------------ */
 .section--security { background: var(--background); }
