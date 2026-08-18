@@ -1,0 +1,29 @@
+# Local environment and editor files
+.freebuff/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.tmp
+*.log
+
+# Dependency and build output
+node_modules/
+dist/
+build/
+out/
+.cache/
+.sass-cache/
+
+# Environment files
+.env
+.env.*
+
+# OS generated files
+._*
+
+# Common backup files
+*.bak
+*.orig
