@@ -64,6 +64,11 @@
   .faq-wrap { grid-template-columns: 1fr; }
   .faq-head { position: static; }
   .faq-head .section-lead { max-width: 60ch; }
+
+  /* Inner page feature detail stacks */
+  .feature-detail-row { grid-template-columns: 1fr; gap: 32px; }
+  .feature-detail-row--reverse { direction: ltr; }
+  .pricing-contact-card { grid-template-columns: 1fr; gap: 32px; }
 }
 
 /* ---------------------------------- ≤768 ---------------------------------- */
@@ -96,6 +101,10 @@
   .cm-dots { display: none; }
 
   .benefit-grid { grid-template-columns: 1fr; }
+
+  /* Inner page hero text center on small screens */
+  .section--page-hero .section-head { text-align: center; }
+  .pricing-cta-buttons, .blog-empty-cta, .pricing-faq-links { justify-content: center; }
 
   /* Hero: reduce decorative shapes, benefits stack, logos wrap */
   .hero-visual::after { display: none; }
