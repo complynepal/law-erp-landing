@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tarik.example/sitemap.xml
+Sitemap: https://tarikh.complynepal.com/sitemap.xml

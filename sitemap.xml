@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Add new <url> entries ONLY after the corresponding page is live and approved for indexing.
+     Do not add entries for pages that return 404 — it signals poor crawl quality to search engines. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://tarik.example/</loc>
+    <loc>https://tarikh.complynepal.com/</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
