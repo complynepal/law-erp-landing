@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Tarik — Landing page interactions
+   Tarikh — Landing page interactions
    Vanilla JS only. Deferred in the document head.
    ========================================================================== */
 (function () {

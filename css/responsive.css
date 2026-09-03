@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Tarik — Responsive layout
+   Tarikh — Responsive layout
    Breakpoints: 1280 · 1100 · 1024 · 960 · 900 · 768 · 640 · 560 · 480 · 375
    ========================================================================== */
 
@@ -48,7 +48,7 @@
   .cm-copy { max-width: none; }
   .cm-visual { width: 100%; max-width: 600px; margin-inline: auto; }
 
-  /* Why Tarik: reduce gap between rows */
+  /* Why Tarikh: reduce gap between rows */
   .why-row { gap: 36px; }
 
   /* Dark section stacks */
@@ -112,7 +112,7 @@
   .hero-benefits { grid-template-columns: 1fr; gap: 18px; }
   .hero-logos { gap: 18px 36px; }
 
-  /* Why Tarik: reduce gap, smaller visual */
+  /* Why Tarikh: reduce gap, smaller visual */
   .why-row { grid-template-columns: 1fr; gap: 28px; }
   .why-row:nth-child(even) { grid-template-columns: 1fr; }
   .why-row:nth-child(even) .why-visual { order: 0; }
