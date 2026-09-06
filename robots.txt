@@ -1,4 +1,38 @@
 User-agent: *
 Allow: /
 
+# Tarikh — Nepal Law ERP & Case Management Software
+# Hosted at: tarikh.complynepal.com | Instagram: @tarikh.np
+# Sitemap: https://tarikh.complynepal.com/sitemap.xml
+
+# Allow all crawling for SEO visibility in Nepal market
+User-agent: *
+Allow: /
+
+# Googlebot specific — prioritize Nepal-relevant content
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 2
+
+# Bingbot
+User-agent: bingbot
+Allow: /
+Crawl-delay: 2
+
+# Social media crawlers — ensure OG tags are fetched
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: Instagram
+Allow: /
+
+# Sitemap location
 Sitemap: https://tarikh.complynepal.com/sitemap.xml
+Sitemap: https://tarikh.complynepal.com/sitemap.xml
+
+# Security: Block admin and sensitive paths (none on static site, but good practice)
+# Disallow: /admin/
+# Disallow: /api/
