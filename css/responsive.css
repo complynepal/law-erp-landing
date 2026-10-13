@@ -36,6 +36,9 @@
   /* Modules: stack groups */
   .mod-groups { grid-template-columns: 1fr; gap: 20px; }
 
+  .nepal-grid { grid-template-columns: repeat(2, 1fr); }
+  .how-grid { grid-template-columns: repeat(2, 1fr); }
+
   /* Footer: two columns */
   .footer-grid { grid-template-columns: repeat(2, 1fr); }
   .footer-brand { grid-column: span 2; }
@@ -47,6 +50,9 @@
   .cm-wrap { grid-template-columns: 1fr; gap: 56px; }
   .cm-copy { max-width: none; }
   .cm-visual { width: 100%; max-width: 600px; margin-inline: auto; }
+
+  .comp-grid { grid-template-columns: 1fr; }
+  .proof-grid { grid-template-columns: 1fr; }
 
   /* Why Tarikh: reduce gap between rows */
   .why-row { gap: 36px; }
@@ -124,6 +130,9 @@
 
   .mod-featured { grid-template-columns: 1fr; }
   .mod-featured-visual { max-width: 420px; }
+
+  .nepal-grid { grid-template-columns: 1fr; }
+  .how-grid { grid-template-columns: 1fr; }
 }
 
 /* ---------------------------------- ≤640 ---------------------------------- */

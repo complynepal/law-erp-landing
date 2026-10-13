@@ -1,0 +1,25 @@
+{
+  "name": "Tarikh — Legal Practice Management & Law ERP",
+  "short_name": "Tarikh",
+  "description": "Legal practice management and law ERP software built for Nepal's law firms.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#0056FF",
+  "icons": [
+    {
+      "src": "assets/images/primary.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/images/primary.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
