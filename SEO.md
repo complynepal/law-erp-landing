@@ -93,11 +93,12 @@ assets/images/primary.png  (used as favicon, apple-touch-icon)
 [✓] blog/blog-post-nepal-court-hierarchy.html — Pillar blog post
 ```
 
-### Assets (need to verify/create)
+### Assets (verified & created)
 ```
-[ ] assets/images/og-cover.png  — 1200x630 social preview image (TODOL)
-[✓] assets/images/primary.png   — Favicon / brand logo
-[ ] assets/logo/logo.svg        — Referenced in schema (must exist or update schema)
+[✓] assets/images/og-cover.png  — 1200x630 social preview image (created)
+[✓] assets/images/primary.png   — Favicon / brand logo / schema logo
+[✓] manifest.json               — PWA web application manifest (created)
+[✓] assets/logo/logo.svg        — SVG brand vector
 ```
 
 ---
